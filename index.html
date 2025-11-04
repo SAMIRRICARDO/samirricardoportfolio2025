@@ -1,0 +1,15 @@
+# criar pasta do portfolio e entrar
+mkdir -p /home/ubuntu/portfolio-samirricardo
+cd /home/ubuntu/portfolio-samirricardo
+
+# criar o arquivo com sua landing page
+nano index.html
+# (cole seu HTML completo; salve com Ctrl+O, Enter; saia com Ctrl+X)
+
+# git + remoto + primeiro commit
+git init
+git branch -M main
+git remote add origin git@github.com:SAMIRRICARDO/portfolio-samirricardo.git
+git add index.html
+git commit -m "feat(portfolio): first commit (landing page + GitHub activity)"
+git push -u origin main
